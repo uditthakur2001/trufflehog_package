@@ -28,7 +28,7 @@ def install_trufflehog(download_path):
         #     zip_ref.extractall('trufflehog')
         with tarfile.open(download_path, 'r:gz') as tar_ref:
             tar_ref.extractall('trufflehog')
-        binary_path = os.path.join('trufflehog', 'trufflehog')
+        binary_path = os.path.join('trufflehog', 'trufflehog.exe')
         install_path = os.path.join(os.environ['ProgramFiles'], 'TruffleHog')
     elif system == 'linux':
         with tarfile.open(download_path, 'r:gz') as tar_ref:
@@ -74,8 +74,8 @@ def add_to_path(install_path):
 
 def main():
     download_path = download_trufflehog()
-    # install_path = install_trufflehog(download_path)
-    # add_to_path(install_path)
+    install_path = install_trufflehog(download_path)
+    add_to_path(install_path)
     print("TruffleHog download complete.")
 
 if __name__ == "__main__":

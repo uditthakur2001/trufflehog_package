@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='trufflehog.1',
-    version='0.2.1',  # Update to the desired version
+    version='0.2.2',  # Update to the desired version
     description='TruffleHog - Find secrets in your code',
     license='MIT',
     packages=find_packages(),
