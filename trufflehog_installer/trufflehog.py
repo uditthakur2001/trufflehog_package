@@ -74,9 +74,9 @@ def add_to_path(install_path):
 
 def main():
     download_path = download_trufflehog()
-    install_path = install_trufflehog(download_path)
-    add_to_path(install_path)
-    print("TruffleHog installation complete.")
+    # install_path = install_trufflehog(download_path)
+    # add_to_path(install_path)
+    print("TruffleHog download complete.")
 
 if __name__ == "__main__":
     main()
